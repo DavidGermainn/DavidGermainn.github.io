@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/map.css">
+
+    <title>Map Interactive</title>
+</head>
+
+<body>
+
+    <div class="operaPop" id="operaPop">
+        <div class="close" id="close" onclick="closeOverlay()">
+            <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fgray%2Fx-mark-xxl.png&f=1&nofb=1">
+        </div>
+        <div class="operaContainer" id="operaContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    3 Men Near Opera
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/3 Men neat Opera/Ambient 2.wav" type="audio/wav">
+                </audio>
+                <img src="images/3 Men neat Opera/3 Men.JPG" style="width:100%;" id="overlayImage" class="mySlides">
+            </div>
+        </div>
+        <div class="cafeContainer" id="cafeContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Cafe Gallery
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Cafe Gallery/Cafe Gallery.wav" type="audio/wav">
+                </audio>
+                <img src="images/Cafe Gallery/Cafe-Gallery.JPG" style="width:100%;" id="overlayImage" class="cafeSlides">
+                <img src="images/Cafe Gallery/Front of Cafe Gallery (Lights inside Bus).JPG" style="width:100%;" id="overlayImage" class="cafeSlides">
+            </div>
+
+            <a class="prev" onclick="cafePlusSlides(-1)" id="prev">&#10094;</a>
+            <a class="next" onclick="cafePlusSlides(1)" id="next">&#10095;</a>
+        </div>
+        <div class="dramaBarContainer" id="dramaBarContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Drama Bar
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Drama Bar/Drama Bar.wav" type="audio/wav">
+                </audio>
+                <img src="images/Drama Bar/Drama Bar.JPG" style="width:100%;" id="overlayImage" class="dramaSlides">
+                <img src="images/Drama Bar/Drama Bar 2.JPG" style="width:100%;" id="overlayImage" class="dramaSlides">
+                <img src="images/Drama Bar/Drama Bar 3.JPG" style="width:100%;" id="overlayImage" class="dramaSlides">
+            </div>
+
+            <a class="prev" onclick="dramaPlusSlides(-1)" id="prev">&#10094;</a>
+            <a class="next" onclick="dramaPlusSlides(1)" id="next">&#10095;</a>
+        </div>
+        <div class="georgianAirwaysContainer" id="georgianAirwaysContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Georgian Airways
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Georgian Airways/Georgian Airways.wav" type="audio/wav">
+                </audio>
+                <img src="images/Georgian Airways/Georgian Airlines.JPG" style="width:100%;" id="overlayImage" class="gaSlides">
+                <img src="images/Georgian Airways/Georgian Airways 2.JPG" style="width:100%;" id="overlayImage" class="gaSlides">
+                <img src="images/Georgian Airways/Georgian Airways 3.JPG" style="width:100%;" id="overlayImage" class="gaSlides">
+            </div>
+
+            <a class="prev" onclick="gaPlusSlides(-1)" id="prev">&#10094;</a>
+            <a class="next" onclick="gaPlusSlides(1)" id="next">&#10095;</a>
+        </div>
+        <div class="museumContainer" id="museumContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Georgian National Museum
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Georgian National Museum/Georgian National Museum.wav" type="audio/wav">
+                </audio>
+                <img src="images/Georgian National Museum/Georgian National Museum.JPG" style="width:100%;"
+                    id="overlayImage" class="mySlides">
+            </div>
+        </div>
+        <div class="marriotContainer" id="marriotContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Marriot
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Marriott/Marriott.wav" type="audio/wav">
+                </audio>
+                <img src="images/Marriott/Marriot.JPG" style="width:100%;" id="overlayImage" class="marriotSlides">
+                <img src="images/Marriott/Marriott.JPG" style="width:100%;" id="overlayImage" class="marriotSlides">
+
+                <a class="prev" onclick="marriotPlusSlides(-1)" id="prev">&#10094;</a>
+                <a class="next" onclick="marriotPlusSlides(1)" id="next">&#10095;</a>
+            </div>
+        </div>
+        <div class="museumCafeContainer" id="museumCafeContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Museum Cafe
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Museum Cafe/Trees Wild Ambiance.wav" type="audio/wav">
+                </audio>
+                <img src="images/Museum Cafe/Museum Cafe.JPG" style="width:100%;" id="overlayImage" class="museumCafeSlides">
+                <img src="images/Museum Cafe/Museum Cafe 2.JPG" style="width:100%;" id="overlayImage" class="museumCafeSlides">
+                <img src="images/Museum Cafe/Museum Cafe 3.JPG" style="width:100%;" id="overlayImage" class="museumCafeSlides">
+            </div>
+
+            <a class="prev" onclick="museumCafePlusSlides(-1)" id="prev">&#10094;</a>
+            <a class="next" onclick="museumCafePlusSlides(1)" id="next">&#10095;</a>
+        </div>
+        <div class="schoolContainer" id="schoolContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    N1 School
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/N1 School/N1 School.wav" type="audio/wav">
+                </audio>
+                <img src="images/N1 School/N1 School.JPG" style="width:100%;" id="overlayImage" class="mySlides">
+            </div>
+        </div>
+        <div class="galleryContainer" id="galleryContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    National Gallery
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/National Gallery/National Gallery.wav" type="audio/wav">
+                </audio>
+                <img src="images/National Gallery/National Gallery.JPG" style="width:100%;" id="overlayImage" class="gallerySlides">
+                <img src="images/National Gallery/National Gallery 2.JPG" style="width:100%;" id="overlayImage" class="gallerySlides">
+
+                <a class="prev" onclick="galleryPlusSlides(-1)" id="prev">&#10094;</a>
+                <a class="next" onclick="galleryPlusSlides(1)" id="next">&#10095;</a>
+            </div>
+        </div>
+        <div class="nearDramaContainer" id="nearDramaContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Near Drama Bar
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Near Drama Bar/Near Drama Bar.wav" type="audio/wav">
+                </audio>
+                <img src="images/Near Drama Bar/Near Drama Bar.JPG" style="width:100%;" id="overlayImage" class="nearDramaSlides">
+                <img src="images/Near Drama Bar/Near Drama Bar 2.JPG" style="width:100%;" id="overlayImage" class="nearDramaSlides">
+                <img src="images/Near Drama Bar/Near Drama Bar 3.JPG" style="width:100%;" id="overlayImage" class="nearDramaSlides">
+
+                <a class="prev" onclick="nearDramaPlusSlides(-1)" id="prev">&#10094;</a>
+                <a class="next" onclick="nearDramaPlusSlides(1)" id="next">&#10095;</a>
+            </div>
+        </div>
+        <div class="parliamentContainer" id="parliamentContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Parliament
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Parliament/Parliament.wav" type="audio/wav">
+                </audio>
+                <img src="images/Parliament/Georgian Parliament.JPG" style="width:100%;" id="overlayImage"
+                    class="mySlides">
+            </div>
+        </div>
+        <div class="sculptureContainer" id="sculptureContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Sculpture
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Sculpture/Sculpture.wav" type="audio/wav">
+                </audio>
+                <img src="images/Sculpture/Scuplture.JPG" style="width:100%;" id="overlayImage" class="mySlides">
+            </div>
+        </div>
+        <div class="theatreContainer" id="theatreContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Theatre
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Theatre/Theatre.wav" type="audio/wav">
+                </audio>
+                <img src="images/Theatre/Theatre.JPG" style="width:100%;" id="overlayImage" class="theatreSlides">
+                <img src="images/Theatre/Theatre 2.JPG" style="width:100%;" id="overlayImage" class="theatreSlides">
+
+                <a class="prev" onclick="theatrePlusSlides(-1)" id="prev">&#10094;</a>
+                <a class="next" onclick="theatrePlusSlides(1)" id="next">&#10095;</a>
+            </div>
+        </div>
+        <div class="youthContainer" id="youthContainer">
+            <div class="fade" id="images-container" style="height: 100vh;">
+                <p id="ovelayText">
+                    Youth Art Palace
+                </p>
+                <audio id="audioAmbient2" controls>
+                    <source src="images/Youth Art Palace/80s.wav" type="audio/wav">
+                </audio>
+                <img src="images/Youth Art Palace/Youth Art Palace.JPG" style="width:100%;" id="overlayImage"
+                    class="mySlides">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="map"></div>
+
+    <script type="text/javascript" src="Scripts/map.js"></script>
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc9ICxisNi2ji92nQgGF3o6aQjBew_emQ&callback=myMap">
+    </script>
+</body>
+
+</html>

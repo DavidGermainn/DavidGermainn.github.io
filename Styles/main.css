@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: Kroftsmann;
+    src: url('Kroftsmann.ttf');
+}
+#main_video {
+    object-fit: cover; 
+    background-size: cover; 
+    width: 100%;
+    height: 100vh; 
+    transition: none 0s ease 0s;
+    text-align: inherit; 
+    line-height: 0px; 
+    border-width: 0px; 
+    margin: 0px; 
+    padding: 0px; 
+    letter-spacing: 0px; 
+    font-weight: 300; 
+    font-size: 8px; 
+    display: block; 
+    visibility: inherit; 
+    opacity: 1;
+}
+#typewriter_text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 40%;
+    margin-top: -600px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Kroftsmann', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
